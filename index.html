@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stephen Amoako | Creative Technologist</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ==============================
+       NAVIGATION
+  ============================== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo"><span class="dot">S. Amoako</span></a>
+      <ul class="nav__list" id="nav-list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Hire Me</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ==============================
+         HERO SECTION
+    ============================== -->
+    <section class="hero section" id="home">
+      <canvas class="hero__canvas" id="hero-canvas"></canvas>
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__blob hero__blob--3"></div>
+      <div class="hero__content container">
+        <div class="hero__text">
+          <p class="hero__greeting">Hello, I'm</p>
+          <!-- ⬇️ REPLACE: Update with your full name -->
+          <h1 class="hero__name">Stephen Amoako</h1>
+          <h2 class="hero__title">Creative Technologist</h2>
+          <p class="hero__description">
+            I design digital experiences for retail, e-commerce &amp; smart systems —
+            combining branding, web development, and marketing automation into
+            one seamless workflow.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="assets/images/Resume - Stephen.pdf" class="btn btn--outline" download>Download CV</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__number">8+</span>
+              <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">20+</span>
+              <span class="stat__label">Projects Delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">2</span>
+              <span class="stat__label">Countries (UAE & KSA)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <!-- ======================================================
+               IMAGE PLACEHOLDER — YOUR PROFILE PHOTO
+               Replace the div below with:
+               <img src="assets/images/profile.jpg" alt="Stephen Amoako" class="hero__img" />
+               Recommended: Square or portrait photo, min 600x600px
+          ====================================================== -->
+          <img src="assets/images/stephen_hero_image.jpg" alt="Stephen Amoako" class="hero__img" />
+          <div class="hero__badge">
+            <span class="badge__dot"></span>
+            <span>Available for opportunities</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll down</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==============================
+         ABOUT SECTION
+    ============================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Who I Am</span>
+          <h2 class="section__title">About Me</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__visual">
+            <!-- ======================================================
+                 IMAGE PLACEHOLDER — ABOUT PHOTO / WORK ENVIRONMENT
+                 Replace with:
+                 <img src="assets/images/about.jpg" alt="About me" class="about__img" />
+                 Recommended: Landscape photo, min 800x600px
+                 Ideas: You at your workstation, or a clean branded workspace photo
+            ====================================================== -->
+            <img src="assets/images/stephen_about_image.jpg" alt="About me" class="about__img" />
+
+            <div class="about__card">
+              <p class="about__card-label">Currently</p>
+              <p class="about__card-value">The Blue Box Vending Machines LLC</p>
+              <p class="about__card-location">📍 Dubai, UAE</p>
+            </div>
+          </div>
+
+          <div class="about__content">
+            <p class="about__lead">
+              I'm a Creative Technologist working at the intersection of design,
+              technology, and marketing — turning complex digital challenges into
+              clean, functional systems.
+            </p>
+            <p class="about__body">
+              Since October 2023, I've been the lead creative and digital systems
+              specialist at Blue Box Vending Machines LLC, managing everything from
+              AI-assisted motion content and brand design to CMS deployment
+              (Televend &amp; Invenda), email marketing campaigns across UAE and
+              KSA, Microsoft 365 administration, and customer experience systems.
+            </p>
+            <p class="about__body">
+              I've built and deployed brand systems that live on physical machines
+              and digital screens simultaneously — a rare combination of creative
+              thinking, technical execution, and marketing strategy.
+            </p>
+            <div class="about__highlights">
+              <div class="highlight">
+                <span class="highlight__icon">🎨</span>
+                <span>Brand &amp; Motion Design</span>
+              </div>
+              <div class="highlight">
+                <span class="highlight__icon">💻</span>
+                <span>Web &amp; Systems Dev</span>
+              </div>
+              <div class="highlight">
+                <span class="highlight__icon">📡</span>
+                <span>DOOH &amp; CMS Deployment</span>
+              </div>
+              <div class="highlight">
+                <span class="highlight__icon">📈</span>
+                <span>Marketing Automation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         SERVICES SECTION
+    ============================== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">What I Do</span>
+          <h2 class="section__title">Services &amp; Expertise</h2>
+          <p class="section__subtitle">
+            A rare hybrid of creative and technical skills — one person, full-stack capability.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Brand &amp; Visual Design</h3>
+            <p class="service-card__desc">
+              Complete brand identity systems — logos, color systems, typography,
+              machine wraps, vehicle branding and large-format print design.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Web Design &amp; Development</h3>
+            <p class="service-card__desc">
+              Website design, landing pages, and marketing funnels built for
+              conversion — from concept to live deployment.
+            </p>
+          </div>
+
+          <div class="service-card service-card--featured">
+            <div class="service-card__badge">Core Specialty</div>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4m0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/>
+                <path d="M9 22V12h6v10M2 17h20"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Smart Retail &amp; DOOH Systems</h3>
+            <p class="service-card__desc">
+              End-to-end smart vending and digital signage — AI-assisted motion
+              content, CMS management (Televend/Invenda), multi-country ad
+              scheduling, physical-to-digital brand integration.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Email Marketing &amp; Automation</h3>
+            <p class="service-card__desc">
+              Strategy, Zoho campaign execution, landing pages, newsletters and
+              automation workflows — with measurable results across UAE and KSA.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">IT &amp; Systems Administration</h3>
+            <p class="service-card__desc">
+              Microsoft 365 and Google Workspace admin, API coordination with
+              third-party developers, office systems management.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 0 1-8 0"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">E-commerce Operations</h3>
+            <p class="service-card__desc">
+              Amazon and Noon marketplace management — listing design, optimization,
+              and operational workflows for retail brands.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         PROJECTS SECTION
+    ============================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">My Work</span>
+          <h2 class="section__title">Selected Projects</h2>
+          <p class="section__subtitle">
+            Real work. Real deployment. Physical + digital systems built from scratch.
+          </p>
+        </div>
+
+        <div class="projects__grid">
+
+          <!-- PROJECT 1 — HYPE SNACKS (HERO PROJECT) -->
+          <article class="project-card project-card--hero">
+            <div class="project-card__media">
+              <!-- ======================================================
+                   IMAGE PLACEHOLDER — HYPE SNACKS MACHINE PHOTO
+                   Replace with:
+                   <img src="assets/images/hype-snacks-machine.jpg"
+                        alt="Hype Snacks Smart Vending Machine" class="project-card__img" />
+                   Upload: Photo of the branded Hype Snacks vending machine
+                   Recommended: 1200×800px, landscape
+              ====================================================== -->
+              <img src="assets/images/stephen_hype_image.jpg" alt="Hype Snacks Smart Vending Machine" class="project-card__img" />
+              <div class="project-card__tags">
+                <span class="tag">Smart Retail</span>
+                <span class="tag">Branding</span>
+                <span class="tag">DOOH</span>
+                <span class="tag">Motion</span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <span class="project-card__label">Featured Project</span>
+              <h3 class="project-card__title">Hype Snacks — Smart Vending Brand System</h3>
+              <p class="project-card__desc">
+                End-to-end brand system for a smart vending line deployed across UAE
+                and KSA. Designed the AI-assisted brand character, produced a 12-second
+                DOOH motion video, managed CMS deployment via Televend/Invenda, and
+                designed the large-format machine wrap — all as one cohesive system.
+              </p>
+              <ul class="project-card__points">
+                <li>AI-assisted character &amp; identity design</li>
+                <li>12-second motion video for vending screens</li>
+                <li>Large-format machine wrap (design + print-ready)</li>
+                <li>CMS multi-location deployment (UAE &amp; KSA)</li>
+                <li>Pre-print 3D mockup validation</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 — VEHICLE BRANDING -->
+          <article class="project-card">
+            <div class="project-card__media">
+              <!-- ======================================================
+                   IMAGE PLACEHOLDER — VAN/VEHICLE WRAP PHOTO
+                   Replace with:
+                   <img src="assets/images/vehicle-branding.jpg"
+                        alt="Blue Box Vehicle Branding" class="project-card__img" />
+                   Upload: Photo of the branded company van/vehicle
+                   Recommended: 1000×700px, landscape
+              ====================================================== -->
+              <img src="assets/images/stephen_vehicle_branding_image.jpg" alt="Blue Box Vehicle Branding" class="project-card__img" />
+              <div class="project-card__tags">
+                <span class="tag">Branding</span>
+                <span class="tag">Large Format</span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Blue Box Corporate Fleet Branding</h3>
+              <p class="project-card__desc">
+                Designed and delivered a full vehicle wrap transforming the company
+                van into a mobile brand asset — bilingual (Arabic/English), aligned
+                with the Hype Snacks visual identity, and production-ready.
+              </p>
+              <ul class="project-card__points">
+                <li>Bilingual Arabic + English layout</li>
+                <li>Brand consistency with retail machine system</li>
+                <li>Pre-production 3D mockup validation</li>
+                <li>Print-ready large-format artwork</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 — HYPE SNACKS MOCKUP -->
+          <article class="project-card">
+            <div class="project-card__media">
+              <!-- ======================================================
+                   IMAGE PLACEHOLDER — HYPE SNACKS 3D MOCKUP
+                   Replace with:
+                   <img src="assets/images/hype-snacks-mockup.jpg"
+                        alt="Hype Snacks Pre-Print 3D Mockup" class="project-card__img" />
+                   Upload: The 3D mockup image you created before printing
+                   Recommended: 1000×700px
+              ====================================================== -->
+              <img src="assets/images/stephen_hypemockup_image.jpg" alt="Hype Snacks Pre-Print 3D Mockup" class="project-card__img" />
+              <div class="project-card__tags">
+                <span class="tag">Pre-production</span>
+                <span class="tag">3D Mockup</span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Pre-Production 3D Mockup &amp; Validation</h3>
+              <p class="project-card__desc">
+                Before committing to large-format print, I built a 3D mockup to
+                validate scale, placement, and visual balance — reducing production
+                risk and ensuring final output matched the brand vision.
+              </p>
+              <ul class="project-card__points">
+                <li>Scale and proportion validation</li>
+                <li>Interaction zone awareness (screen, payment, door)</li>
+                <li>Typography readability at real distance</li>
+                <li>Brand balance check across all surfaces</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- PROJECT 4 — VEHICLE BRANDING MOCKUP -->
+          <article class="project-card">
+            <div class="project-card__media">
+              <!-- ======================================================
+                   IMAGE PLACEHOLDER — VEHICLE BRANDING 3D MOCKUP
+                   Replace with:
+                   <img src="assets/images/vehicle-branding-mockup.jpg"
+                        alt="Blue Box Vehicle Branding Pre-Production Mockup" class="project-card__img" />
+                   Upload: The 3D mockup image created before the vehicle wrap was printed
+                   Recommended: 1000×700px
+              ====================================================== -->
+              <img src="assets/images/stephen_vehicle_mockup_image.jpg" alt="Blue Box Vehicle Branding Pre-Production Mockup" class="project-card__img" />
+              <div class="project-card__tags">
+                <span class="tag">Pre-production</span>
+                <span class="tag">3D Mockup</span>
+                <span class="tag">Vehicle Wrap</span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Vehicle Branding — Pre-Production Mockup</h3>
+              <p class="project-card__desc">
+                Before the van wrap went to print, I produced a 3D vehicle mockup
+                to validate layout, bilingual text placement, and brand alignment —
+                giving stakeholders a true-to-life preview and eliminating costly
+                print revisions.
+              </p>
+              <ul class="project-card__points">
+                <li>True-to-scale vehicle template mapping</li>
+                <li>Arabic + English placement validation</li>
+                <li>Colour accuracy and bleed zone checks</li>
+                <li>Stakeholder sign-off before production</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- PROJECT 5 — MACHO FITNESS (WEBSITE) -->
+          <article class="project-card">
+            <div class="project-card__media">
+              <!-- ======================================================
+                   IMAGE PLACEHOLDER — MACHO FITNESS WEBSITE SCREENSHOT
+                   Replace with:
+                   <img src="assets/images/macho-fitness.jpg"
+                        alt="Macho Fitness Equipment Website" class="project-card__img" />
+                   Upload: A screenshot of the website (machofitnessequipment.com)
+                   Take a full-page screenshot using browser dev tools
+                   Recommended: 1200×750px
+              ====================================================== -->
+              <img src="assets/images/macho_fitness.png" alt="Macho Fitness Equipment Website" class="project-card__img" />
+              <div class="project-card__tags">
+                <span class="tag">Web Design</span>
+                <span class="tag">E-commerce</span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Macho Fitness Equipment</h3>
+              <p class="project-card__desc">
+                Designed and developed a commercial fitness equipment website for a
+                UAE-based supplier — structured for product discoverability and
+                built to support distributor and gym client inquiries.
+              </p>
+              <a href="https://machofitnessequipment.com/?v=b6bb43df4525" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                Visit Live Site →
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 5 — HANGERS WORLD -->
+          <article class="project-card">
+            <div class="project-card__media">
+              <!-- ======================================================
+                   IMAGE PLACEHOLDER — HANGERS WORLD WEBSITE SCREENSHOT
+                   Replace with:
+                   <img src="assets/images/hangers-world.jpg"
+                        alt="Hangers World UAE Website" class="project-card__img" />
+                   Upload: Full-page screenshot of hangersworld.ae
+                   Recommended: 1200×750px
+              ====================================================== -->
+              <img src="assets/images/hangersworld.png" alt="Hangers World UAE Website" class="project-card__img" />
+              <div class="project-card__tags">
+                <span class="tag">Web Design</span>
+                <span class="tag">Product Catalog</span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Hangers World UAE</h3>
+              <p class="project-card__desc">
+                Corporate website design and development for a retail hanger
+                distribution company — complete product catalog structure,
+                brand positioning, and professional supplier identity.
+              </p>
+              <a href="https://www.hangersworld.ae/" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                Visit Live Site →
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 6 — COFFEE MACHINES LANDING PAGE -->
+          <article class="project-card">
+            <div class="project-card__media">
+              <!-- ======================================================
+                   IMAGE PLACEHOLDER — COFFEE MACHINES LANDING PAGE SCREENSHOT
+                   Replace with:
+                   <img src="assets/images/coffee-machines.jpg"
+                        alt="Blue Box Coffee Machines Landing Page" class="project-card__img" />
+                   Upload: Screenshot of coffeemachines2.thebluebox.com
+                   Recommended: 1200×750px
+              ====================================================== -->
+              <img src="assets/images/bluebox_marketing.png" alt="Blue Box Coffee Machines Landing Page" class="project-card__img" />
+              <div class="project-card__tags">
+                <span class="tag">Landing Page</span>
+                <span class="tag">Marketing</span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Blue Box Coffee Machines Campaign</h3>
+              <p class="project-card__desc">
+                Marketing landing page system for commercial coffee machine
+                distribution — built for lead generation with campaign tracking
+                and conversion-focused layout design.
+              </p>
+              <a href="https://coffeemachines2.thebluebox.com" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                Visit Live Site →
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 7 — GENESIS ACADEMY -->
+          <article class="project-card">
+            <div class="project-card__media">
+              <!-- ======================================================
+                   IMAGE PLACEHOLDER — GENESIS ACADEMY WEBSITE SCREENSHOT
+                   Replace with:
+                   <img src="assets/images/genesis-academy.jpg"
+                        alt="Genesis Academy Ghana Website" class="project-card__img" />
+                   Upload: Screenshot of genesisacademygh.org
+                   Recommended: 1200×750px
+              ====================================================== -->
+              <img src="assets/images/genesis_academy.png" alt="Genesis Academy Ghana Website" class="project-card__img" />
+              <div class="project-card__tags">
+                <span class="tag">Web Design</span>
+                <span class="tag">Education</span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Genesis Academy Ghana</h3>
+              <p class="project-card__desc">
+                Educational institution website — information architecture,
+                design system, and development for a Ghana-based academy.
+              </p>
+              <a href="https://genesisacademygh.org" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                Visit Live Site →
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 8 — CLEAR MIND GHANA -->
+          <article class="project-card">
+            <div class="project-card__media">
+              <!-- ======================================================
+                   IMAGE PLACEHOLDER — CLEAR MIND GHANA WEBSITE SCREENSHOT
+                   Replace with:
+                   <img src="assets/images/clearmind.jpg"
+                        alt="Clear Mind Ghana Website" class="project-card__img" />
+                   Upload: Screenshot of clearmindghana.com
+                   Recommended: 1200×750px
+              ====================================================== -->
+              <img src="assets/images/clearmind_ghana.png" alt="Clear Mind Ghana Website" class="project-card__img" />
+              <div class="project-card__tags">
+                <span class="tag">Web Design</span>
+                <span class="tag">NGO / Health</span>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Clear Mind Ghana</h3>
+              <p class="project-card__desc">
+                Brand website for a mental health and wellness organization —
+                designed with a calm, accessible visual language and clear
+                information hierarchy.
+              </p>
+              <a href="https://clearmindghana.com" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                Visit Live Site →
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         SKILLS SECTION
+    ============================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">My Toolkit</span>
+          <h2 class="section__title">Skills &amp; Tools</h2>
+        </div>
+
+        <div class="skills__grid">
+
+          <div class="skills__category">
+            <h3 class="skills__category-title">
+              <span class="skills__category-icon">🎨</span>
+              Design
+            </h3>
+            <ul class="skills__list">
+              <li class="skill-item"><span class="skill-item__name">Adobe Photoshop</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:90%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Adobe Illustrator</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:85%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Canva</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:95%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">AI Creative Tools</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:80%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Kdenlive (Video)</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:75%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skills__category">
+            <h3 class="skills__category-title">
+              <span class="skills__category-icon">💻</span>
+              Web &amp; Digital
+            </h3>
+            <ul class="skills__list">
+              <li class="skill-item"><span class="skill-item__name">WordPress</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:88%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">HTML / CSS</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:80%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Landing Page Design</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:90%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">UX/UI Design</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:78%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skills__category">
+            <h3 class="skills__category-title">
+              <span class="skills__category-icon">📡</span>
+              Smart Retail &amp; Systems
+            </h3>
+            <ul class="skills__list">
+              <li class="skill-item"><span class="skill-item__name">Televend CMS</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:85%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Invenda CMS</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:82%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">DOOH Content Deployment</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:88%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">API Coordination</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:70%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skills__category">
+            <h3 class="skills__category-title">
+              <span class="skills__category-icon">📈</span>
+              Marketing
+            </h3>
+            <ul class="skills__list">
+              <li class="skill-item"><span class="skill-item__name">Email Marketing</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:85%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Marketing Automation</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:78%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Social Media Campaigns</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:85%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Amazon / Noon Operations</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:80%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skills__category">
+            <h3 class="skills__category-title">
+              <span class="skills__category-icon">🛠️</span>
+              IT Administration
+            </h3>
+            <ul class="skills__list">
+              <li class="skill-item"><span class="skill-item__name">Microsoft 365 Admin</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:90%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Google Workspace Admin</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:85%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Systems Administration</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:82%"></div></div></li>
+            </ul>
+          </div>
+
+          <div class="skills__category">
+            <h3 class="skills__category-title">
+              <span class="skills__category-icon">📊</span>
+              Microsoft Office
+            </h3>
+            <ul class="skills__list">
+              <li class="skill-item"><span class="skill-item__name">Microsoft Word</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:95%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Microsoft Excel</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:88%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Microsoft PowerPoint</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:92%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Microsoft Teams</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:90%"></div></div></li>
+              <li class="skill-item"><span class="skill-item__name">Microsoft Outlook</span><div class="skill-item__bar"><div class="skill-item__fill" style="--w:93%"></div></div></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         TESTIMONIAL / QUOTE SECTION
+    ============================== -->
+    <section class="quote-section section">
+      <div class="container">
+        <div class="quote-block">
+          <!-- ======================================================
+               IMAGE PLACEHOLDER — OPTIONAL WORK ACTION SHOT
+               You can add a background image or a work environment photo here.
+               Replace the section background in style.css or add an <img> tag.
+          ====================================================== -->
+          <p class="quote-block__text">
+            "I build brand systems that exist both on the screen and in the physical world —
+            connecting digital experience with real-world presence."
+          </p>
+          <p class="quote-block__author">— Your Name, Creative Technologist</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         CONTACT SECTION
+    ============================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Get In Touch</span>
+          <h2 class="section__title">Let's Work Together</h2>
+          <p class="section__subtitle">
+            Available for full-time roles, freelance projects, and consulting.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact__item-label">Email</p>
+                <!-- ⬇️ REPLACE: Update with your real email address -->
+                <a href="mailto:stevegraphics3@gmail.com" class="contact__item-value">stevegraphics3@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact__item-label">LinkedIn</p>
+                <!-- ⬇️ REPLACE: Update with your real LinkedIn URL -->
+                <a href="https://www.linkedin.com/in/stephen-amoako-25785165/" target="_blank" rel="noopener noreferrer" class="contact__item-value">linkedin.com/in/stephen-amoako-25785165</a>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <p class="contact__item-label">Location</p>
+                <p class="contact__item-value">Dubai, United Arab Emirates</p>
+              </div>
+            </div>
+
+            <a href="assets/images/Resume - Stephen.pdf" class="btn btn--primary" download>Download Full CV</a>
+          </div>
+
+          <div data-fs-success class="form__success">Thanks! Your message has been sent — I'll get back to you shortly.</div>
+          <div data-fs-error class="form__error"></div>
+
+          <form class="contact__form" id="contact-form">
+            <div class="form__group">
+              <label for="name" class="form__label">Your Name</label>
+              <input type="text" id="name" name="name" class="form__input" placeholder="John Smith" data-fs-field required />
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Email Address</label>
+              <input type="email" id="email" name="email" class="form__input" placeholder="john@company.com" data-fs-field required />
+              <span data-fs-error="email" class="form__field-error"></span>
+            </div>
+            <div class="form__group">
+              <label for="subject" class="form__label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form__input" placeholder="Job Opportunity / Project Inquiry" data-fs-field />
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Message</label>
+              <textarea id="message" name="message" class="form__textarea" placeholder="Tell me about the role or project..." rows="5" data-fs-field required></textarea>
+              <span data-fs-error="message" class="form__field-error"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" data-fs-submit-btn>Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <!-- ⬇️ REPLACE: Update logo initials or name -->
+          <a href="#home" class="nav__logo">S. Amoako<span class="dot">.</span></a>
+          <p class="footer__tagline">Creative Technologist — UAE</p>
+        </div>
+        <div class="footer__links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <!-- ⬇️ REPLACE: Update with your full name -->
+      <p class="footer__copy">© 2026 Stephen Amoako. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contact-form', formId: 'mzdkavyb' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
