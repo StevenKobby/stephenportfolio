@@ -127,13 +127,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // ----------------------------------------
   // SKILL BAR ANIMATION
   // ----------------------------------------
-  const skillFills = document.querySelectorAll('.skill-item__fill');
+  const skillBars = document.querySelectorAll('.skill-item__bar');
 
   const skillObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animated');
+          const fill = entry.target.querySelector('.skill-item__fill');
+          if (fill) fill.classList.add('animated');
           skillObserver.unobserve(entry.target);
         }
       });
@@ -141,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { threshold: 0.3 }
   );
 
-  skillFills.forEach(fill => skillObserver.observe(fill));
+  skillBars.forEach(bar => skillObserver.observe(bar));
 
   // ----------------------------------------
   // CONTACT FORM — handled by @formspree/ajax (see index.html)
